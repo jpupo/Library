@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a12" title="">
+  <file path="Config\acl.ini.php" hash="0e216853990dfb16f21ebc91685c55fd" package="Default">
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\acl.ini.php</error>
+    </parse_markers>
+  </file>
+  <file path="Config\bootstrap.php" hash="f38f2685ce42029f2eeec01a44bdcb44" package="app\Config">
+    <docblock line="2">
+      <description>This file is loaded automatically by the app/webroot/index.php file after core.php</description>
+      <long-description>&lt;p&gt;This file should load/create any application wide configuration settings, such as
+Caching, Logging, loading additional configuration files.&lt;/p&gt;
+
+&lt;p&gt;You should also use this file to include any files that provide global functions/constants
+that your application uses.&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.10.8.2117"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+  </file>
+  <file path="Config\core.php" hash="34e6325d7ad97c13945e789dbc10e93c" package="app\Config">
+    <docblock line="2">
+      <description>This is core configuration file.</description>
+      <long-description>&lt;p&gt;Use it to configure core behavior of Cake.&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <constant namespace="global" line="148" package="app\Config">
+      <name>LOG_ERROR</name>
+      <full_name>\LOG_ERROR</full_name>
+      <value>LOG_ERR</value>
+    </constant>
+  </file>
+  <file path="Config\database.php" hash="dd3c98a190fa87b009d0dd52b2797a06" package="Default">
+    <class final="false" abstract="false" namespace="global" line="2" package="Default">
+      <extends/>
+      <name>DATABASE_CONFIG</name>
+      <full_name>\DATABASE_CONFIG</full_name>
+      <property final="false" static="false" visibility="public" line="4" namespace="global" package="Default">
+        <name>$default</name>
+        <default>array('datasource' =&gt; 'Database/Mysql', 'persistent' =&gt; false, 'host' =&gt; 'localhost', 'login' =&gt; 'root', 'password' =&gt; '', 'database' =&gt; 'library')</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="12" namespace="global" package="Default">
+        <name>$test</name>
+        <default>array('datasource' =&gt; 'Database/Mysql', 'persistent' =&gt; false, 'host' =&gt; 'localhost', 'login' =&gt; 'root', 'password' =&gt; '', 'database' =&gt; 'library_test')</default>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\database.php</error>
+      <error line="2" code="50000">No DocBlock was found for \DATABASE_CONFIG</error>
+      <error line="4" code="50018">No DocBlock was found for property $default</error>
+      <error line="12" code="50018">No DocBlock was found for property $test</error>
+    </parse_markers>
+  </file>
+  <file path="Config\routes.php" hash="ec514e7fe847832d24ebf5dbefea140f" package="app\Config">
+    <docblock line="2">
+      <description>Routes configuration</description>
+      <long-description>&lt;p&gt;In this file, you set up routes to your controllers and their actions.
+Routes are very important mechanism that allows you to freely connect
+different urls to chosen controllers and their actions (functions).&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Config"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="44" type="Require" package="Default">
+      <name/>
+      <docblock line="40">
+        <description>Load the CakePHP default routes.</description>
+        <long-description>&lt;p&gt;Only remove this if you do not want to use
+the built-in default routes.&lt;/p&gt;</long-description>
+      </docblock>
+    </include>
+  </file>
+  <file path="Config\Schema\db_acl.php" hash="8e19c0d250a548894453a6799434d716" package="Default">
+    <class final="false" abstract="false" namespace="global" line="30" package="app\Config\Schema">
+      <extends>\CakeSchema</extends>
+      <name>DbAclSchema</name>
+      <full_name>\DbAclSchema</full_name>
+      <docblock line="4">
+        <description>This is Acl Schema file</description>
+        <long-description>&lt;p&gt;Use it to configure database for ACL&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="32" namespace="global" package="Default">
+        <name>$name</name>
+        <default>'DbAcl'</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" namespace="global" package="Default">
+        <name>$acos</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'length' =&gt; 10, 'key' =&gt; 'primary'), 'parent_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'model' =&gt; array('type' =&gt; 'string', 'null' =&gt; true), 'foreign_key' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'alias' =&gt; array('type' =&gt; 'string', 'null' =&gt; true), 'lft' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'rght' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)))</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="52" namespace="global" package="Default">
+        <name>$aros</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'length' =&gt; 10, 'key' =&gt; 'primary'), 'parent_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'model' =&gt; array('type' =&gt; 'string', 'null' =&gt; true), 'foreign_key' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'alias' =&gt; array('type' =&gt; 'string', 'null' =&gt; true), 'lft' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'rght' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null, 'length' =&gt; 10), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)))</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="63" namespace="global" package="Default">
+        <name>$aros_acos</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'length' =&gt; 10, 'key' =&gt; 'primary'), 'aro_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'length' =&gt; 10, 'key' =&gt; 'index'), 'aco_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'length' =&gt; 10), '_create' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; '0', 'length' =&gt; 2), '_read' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; '0', 'length' =&gt; 2), '_update' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; '0', 'length' =&gt; 2), '_delete' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; '0', 'length' =&gt; 2), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1), 'ARO_ACO_KEY' =&gt; array('column' =&gt; array('aro_id', 'aco_id'), 'unique' =&gt; 1)))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="app\Config\Schema">
+        <name>before</name>
+        <full_name>before</full_name>
+        <argument line="34">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="app\Config\Schema">
+        <name>after</name>
+        <full_name>after</full_name>
+        <argument line="38">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\Schema\db_acl.php</error>
+      <error line="32" code="50018">No DocBlock was found for property $name</error>
+      <error line="41" code="50018">No DocBlock was found for property $acos</error>
+      <error line="52" code="50018">No DocBlock was found for property $aros</error>
+      <error line="63" code="50018">No DocBlock was found for property $aros_acos</error>
+      <error line="34" code="50010">No DocBlock was found for method before()</error>
+      <error line="38" code="50010">No DocBlock was found for method after()</error>
+    </parse_markers>
+  </file>
+  <file path="Config\Schema\i18n.php" hash="b8624fbff5e44bab4c13b954108d536f" package="Default">
+    <class final="false" abstract="false" namespace="global" line="31" package="app\Config\Schema">
+      <extends>\CakeSchema</extends>
+      <name>i18nSchema</name>
+      <full_name>\i18nSchema</full_name>
+      <docblock line="4">
+        <description>This is i18n Schema file</description>
+        <long-description>&lt;p&gt;Use it to configure database for i18n&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+        <name>$name</name>
+        <default>'i18n'</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="44" namespace="global" package="Default">
+        <name>$i18n</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'length' =&gt; 10, 'key' =&gt; 'primary'), 'locale' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'length' =&gt; 6, 'key' =&gt; 'index'), 'model' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'key' =&gt; 'index'), 'foreign_key' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'length' =&gt; 10, 'key' =&gt; 'index'), 'field' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'key' =&gt; 'index'), 'content' =&gt; array('type' =&gt; 'text', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1), 'locale' =&gt; array('column' =&gt; 'locale', 'unique' =&gt; 0), 'model' =&gt; array('column' =&gt; 'model', 'unique' =&gt; 0), 'row_id' =&gt; array('column' =&gt; 'foreign_key', 'unique' =&gt; 0), 'field' =&gt; array('column' =&gt; 'field', 'unique' =&gt; 0)))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="37" package="app\Config\Schema">
+        <name>before</name>
+        <full_name>before</full_name>
+        <argument line="37">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="41" package="app\Config\Schema">
+        <name>after</name>
+        <full_name>after</full_name>
+        <argument line="41">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\Schema\i18n.php</error>
+      <error line="35" code="50018">No DocBlock was found for property $name</error>
+      <error line="44" code="50018">No DocBlock was found for property $i18n</error>
+      <error line="37" code="50010">No DocBlock was found for method before()</error>
+      <error line="41" code="50010">No DocBlock was found for method after()</error>
+    </parse_markers>
+  </file>
+  <file path="Config\Schema\schema.php" hash="a2dd3d42faf878b87bc9e6ee492282d9" package="Default">
+    <class final="false" abstract="false" namespace="global" line="2" package="Default">
+      <extends>\CakeSchema</extends>
+      <name>LibrarySchema</name>
+      <full_name>\LibrarySchema</full_name>
+      <property final="false" static="false" visibility="public" line="11" namespace="global" package="Default">
+        <name>$books</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'isbn' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'description' =&gt; array('type' =&gt; 'text', 'null' =&gt; true, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'category_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null), 'author' =&gt; array('type' =&gt; 'string', 'null' =&gt; true, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="25" namespace="global" package="Default">
+        <name>$categories</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'modified' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="36" namespace="global" package="Default">
+        <name>$users</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'email' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'modified' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="4" package="Default">
+        <name>before</name>
+        <full_name>before</full_name>
+        <argument line="4">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="8" package="Default">
+        <name>after</name>
+        <full_name>after</full_name>
+        <argument line="8">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\Schema\schema.php</error>
+      <error line="2" code="50000">No DocBlock was found for \LibrarySchema</error>
+      <error line="11" code="50018">No DocBlock was found for property $books</error>
+      <error line="25" code="50018">No DocBlock was found for property $categories</error>
+      <error line="36" code="50018">No DocBlock was found for property $users</error>
+      <error line="4" code="50010">No DocBlock was found for method before()</error>
+      <error line="8" code="50010">No DocBlock was found for method after()</error>
+    </parse_markers>
+  </file>
+  <file path="Config\Schema\sessions.php" hash="ee7500a7c75bea84c920d66def28a2c2" package="Default">
+    <class final="false" abstract="false" namespace="global" line="30" package="app\Config\Schema">
+      <extends>\CakeSchema</extends>
+      <name>SessionsSchema</name>
+      <full_name>\SessionsSchema</full_name>
+      <docblock line="4">
+        <description>This is Sessions Schema file</description>
+        <long-description>&lt;p&gt;Use it to configure database for Sessions&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+        <tag line="4" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+        <tag line="4" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+        <tag line="4" name="package" description="app.Config.Schema"/>
+        <tag line="4" name="since" description="CakePHP(tm) v 0.2.9"/>
+        <tag line="4" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="32" namespace="global" package="Default">
+        <name>$name</name>
+        <default>'Sessions'</default>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" namespace="global" package="Default">
+        <name>$cake_sessions</name>
+        <default>array('id' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'key' =&gt; 'primary'), 'data' =&gt; array('type' =&gt; 'text', 'null' =&gt; true, 'default' =&gt; null), 'expires' =&gt; array('type' =&gt; 'integer', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)))</default>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="app\Config\Schema">
+        <name>before</name>
+        <full_name>before</full_name>
+        <argument line="34">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="38" package="app\Config\Schema">
+        <name>after</name>
+        <full_name>after</full_name>
+        <argument line="38">
+          <name>$event</name>
+          <default>array()</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Config\Schema\sessions.php</error>
+      <error line="32" code="50018">No DocBlock was found for property $name</error>
+      <error line="41" code="50018">No DocBlock was found for property $cake_sessions</error>
+      <error line="34" code="50010">No DocBlock was found for method before()</error>
+      <error line="38" code="50010">No DocBlock was found for method after()</error>
+    </parse_markers>
+  </file>
+  <file path="Console\cake.php" hash="8df29b945f83d37e5774f1158962e206" package="app\Console">
+    <docblock line="3">
+      <description>Command-line code generation utility to automate programmer chores.</description>
+      <long-description>&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc.&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="3" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="3" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="3" name="package" description="app.Console"/>
+      <tag line="3" name="since" description="CakePHP(tm) v 2.0"/>
+      <tag line="3" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="28" type="Include" package="Default">
+      <name/>
+    </include>
+  </file>
+  <file path="Console\Command\AppShell.php" hash="4d3f9cc7655dcf179f806db16534ce48" package="Default">
+    <docblock line="2">
+      <description>AppShell file</description>
+      <long-description>&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 2.0"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="29" package="app\Console\Command">
+      <extends>\Shell</extends>
+      <name>AppShell</name>
+      <full_name>\AppShell</full_name>
+      <docblock line="21">
+        <description>Application Shell</description>
+        <long-description>&lt;p&gt;Add your application-wide methods in the class below, your shells
+will inherit them.&lt;/p&gt;</long-description>
+        <tag line="21" name="package" description="app.Console.Command"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Controller\AppController.php" hash="36cac41618cc39d48b2767e2ff18677e" package="app\Controller">
+    <docblock line="2">
+      <description>Application level Controller</description>
+      <long-description>&lt;p&gt;This file is application-wide controller file. You can put all
+application-wide controller-related methods here.&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Controller"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="34" package="app\Controller">
+      <extends>\Controller</extends>
+      <name>AppController</name>
+      <full_name>\AppController</full_name>
+      <docblock line="25">
+        <description>Application Controller</description>
+        <long-description>&lt;p&gt;Add your application-wide methods in the class below, your controllers
+will inherit them.&lt;/p&gt;</long-description>
+        <tag line="25" name="package" description="app.Controller"/>
+        <tag line="25" name="link" description="http://book.cakephp.org/2.0/en/controllers.html#the-app-controller" link="http://book.cakephp.org/2.0/en/controllers.html#the-app-controller"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Controller\BooksController.php" hash="7d908f0bcab923150f2ff640d60b64b9" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\AppController</extends>
+      <name>BooksController</name>
+      <full_name>\BooksController</full_name>
+      <docblock line="3">
+        <description>Books Controller</description>
+        <long-description></long-description>
+        <tag line="3" name="property" description="" type="\Book" variable="$Book">
+          <type by_reference="false">\Book</type>
+        </tag>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>index</name>
+        <full_name>index</full_name>
+        <docblock line="10">
+          <description>index method</description>
+          <long-description></long-description>
+          <tag line="10" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="27" package="Default">
+        <name>view</name>
+        <full_name>view</full_name>
+        <docblock line="20">
+          <description>view method</description>
+          <long-description></long-description>
+          <tag line="20" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="20" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="27">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>add</name>
+        <full_name>add</full_name>
+        <docblock line="35">
+          <description>add method</description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="61" package="Default">
+        <name>edit</name>
+        <full_name>edit</full_name>
+        <docblock line="54">
+          <description>edit method</description>
+          <long-description></long-description>
+          <tag line="54" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="54" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="54" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="61">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="88" package="Default">
+        <name>delete</name>
+        <full_name>delete</full_name>
+        <docblock line="80">
+          <description>delete method</description>
+          <long-description></long-description>
+          <tag line="80" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="80" name="throws" description="" type="\MethodNotAllowedException">
+            <type by_reference="false">\MethodNotAllowedException</type>
+          </tag>
+          <tag line="80" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="80" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="88">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Controller\BooksController.php</error>
+    </parse_markers>
+  </file>
+  <file path="Controller\CategoriesController.php" hash="fd28d72a183527c5ef578f6445c2dae1" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\AppController</extends>
+      <name>CategoriesController</name>
+      <full_name>\CategoriesController</full_name>
+      <docblock line="3">
+        <description>Categories Controller</description>
+        <long-description></long-description>
+        <tag line="3" name="property" description="" type="\Category" variable="$Category">
+          <type by_reference="false">\Category</type>
+        </tag>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>index</name>
+        <full_name>index</full_name>
+        <docblock line="10">
+          <description>index method</description>
+          <long-description></long-description>
+          <tag line="10" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="27" package="Default">
+        <name>view</name>
+        <full_name>view</full_name>
+        <docblock line="20">
+          <description>view method</description>
+          <long-description></long-description>
+          <tag line="20" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="20" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="27">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>add</name>
+        <full_name>add</full_name>
+        <docblock line="35">
+          <description>add method</description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="Default">
+        <name>edit</name>
+        <full_name>edit</full_name>
+        <docblock line="52">
+          <description>edit method</description>
+          <long-description></long-description>
+          <tag line="52" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="52" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="52" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="59">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="84" package="Default">
+        <name>delete</name>
+        <full_name>delete</full_name>
+        <docblock line="76">
+          <description>delete method</description>
+          <long-description></long-description>
+          <tag line="76" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="76" name="throws" description="" type="\MethodNotAllowedException">
+            <type by_reference="false">\MethodNotAllowedException</type>
+          </tag>
+          <tag line="76" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="76" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="84">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Controller\CategoriesController.php</error>
+    </parse_markers>
+  </file>
+  <file path="Controller\PagesController.php" hash="4cddbe3e3a0b664301565e560895382e" package="app\Controller">
+    <docblock line="2">
+      <description>Static content controller.</description>
+      <long-description>&lt;p&gt;This file will render views from views/pages/&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Controller"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="31" package="app\Controller">
+      <extends>\AppController</extends>
+      <name>PagesController</name>
+      <full_name>\PagesController</full_name>
+      <docblock line="23">
+        <description>Static content controller</description>
+        <long-description>&lt;p&gt;Override this controller by placing a copy in controllers directory of an application&lt;/p&gt;</long-description>
+        <tag line="23" name="package" description="app.Controller"/>
+        <tag line="23" name="link" description="http://book.cakephp.org/2.0/en/controllers/pages-controller.html" link="http://book.cakephp.org/2.0/en/controllers/pages-controller.html"/>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="38" namespace="global" package="Default">
+        <name>$uses</name>
+        <default>array()</default>
+        <docblock line="33">
+          <description>This controller does not use a model</description>
+          <long-description></long-description>
+          <tag line="33" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="45" package="app\Controller">
+        <name>display</name>
+        <full_name>display</full_name>
+        <docblock line="40">
+          <description>Displays a view</description>
+          <long-description></long-description>
+          <tag line="40" name="param" description="What page to display" type="string" variable="">
+            <type by_reference="false">string</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <notice line="40" code="50013">Parameter  could not be found in display()</notice>
+    </parse_markers>
+  </file>
+  <file path="Controller\UsersController.php" hash="79e6a35bb5b231400e4b2751a42ff5fc" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\AppController</extends>
+      <name>UsersController</name>
+      <full_name>\UsersController</full_name>
+      <docblock line="3">
+        <description>Users Controller</description>
+        <long-description></long-description>
+        <tag line="3" name="property" description="" type="\User" variable="$User">
+          <type by_reference="false">\User</type>
+        </tag>
+      </docblock>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="15" package="Default">
+        <name>index</name>
+        <full_name>index</full_name>
+        <docblock line="10">
+          <description>index method</description>
+          <long-description></long-description>
+          <tag line="10" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="27" package="Default">
+        <name>view</name>
+        <full_name>view</full_name>
+        <docblock line="20">
+          <description>view method</description>
+          <long-description></long-description>
+          <tag line="20" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="20" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="27">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>add</name>
+        <full_name>add</full_name>
+        <docblock line="35">
+          <description>add method</description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="Default">
+        <name>edit</name>
+        <full_name>edit</full_name>
+        <docblock line="52">
+          <description>edit method</description>
+          <long-description></long-description>
+          <tag line="52" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="52" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="52" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="59">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="84" package="Default">
+        <name>delete</name>
+        <full_name>delete</full_name>
+        <docblock line="76">
+          <description>delete method</description>
+          <long-description></long-description>
+          <tag line="76" name="throws" description="" type="\NotFoundException">
+            <type by_reference="false">\NotFoundException</type>
+          </tag>
+          <tag line="76" name="throws" description="" type="\MethodNotAllowedException">
+            <type by_reference="false">\MethodNotAllowedException</type>
+          </tag>
+          <tag line="76" name="param" description="" type="string" variable="$id">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="76" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="84">
+          <name>$id</name>
+          <default>null</default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Controller\UsersController.php</error>
+    </parse_markers>
+  </file>
+  <file path="index.php" hash="df8457c55ab1921476c240f693df6a16" package="app">
+    <docblock line="2">
+      <description>PHP 5</description>
+      <long-description>&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.10.0.1076"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="17" type="Require" package="Default">
+      <name/>
+    </include>
+  </file>
+  <file path="Model\AppModel.php" hash="e9d700f16d481992170e657386480754" package="app\Model">
+    <docblock line="2">
+      <description>Application model for Cake.</description>
+      <long-description>&lt;p&gt;This file is application-wide model file. You can put all
+application-wide model-related methods here.&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.Model"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="33" package="app\Model">
+      <extends>\Model</extends>
+      <name>AppModel</name>
+      <full_name>\AppModel</full_name>
+      <docblock line="25">
+        <description>Application model for Cake.</description>
+        <long-description>&lt;p&gt;Add your application-wide methods in the class below, your models
+will inherit them.&lt;/p&gt;</long-description>
+        <tag line="25" name="package" description="app.Model"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="Model\Book.php" hash="4a8ae307c8ccf10112a22d8da6996dc0" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\AppModel</extends>
+      <name>Book</name>
+      <full_name>\Book</full_name>
+      <docblock line="3">
+        <description>Book Model</description>
+        <long-description></long-description>
+        <tag line="3" name="property" description="" type="\Category" variable="$Category">
+          <type by_reference="false">\Category</type>
+        </tag>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$validate</name>
+        <default>array('name' =&gt; array('notempty' =&gt; array('rule' =&gt; array('notempty'))), 'isbn' =&gt; array('notempty' =&gt; array('rule' =&gt; array('notempty'))), 'category_id' =&gt; array('numeric' =&gt; array('rule' =&gt; array('numeric'))))</default>
+        <docblock line="10">
+          <description>Validation rules</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="55" namespace="global" package="Default">
+        <name>$belongsTo</name>
+        <default>array('Category' =&gt; array('className' =&gt; 'Category', 'foreignKey' =&gt; 'category_id', 'conditions' =&gt; '', 'fields' =&gt; '', 'order' =&gt; ''))</default>
+        <docblock line="50">
+          <description>belongsTo associations</description>
+          <long-description></long-description>
+          <tag line="50" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Model\Book.php</error>
+    </parse_markers>
+  </file>
+  <file path="Model\Category.php" hash="4a7db159226bdf5fa15c7ec9751b257c" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\AppModel</extends>
+      <name>Category</name>
+      <full_name>\Category</full_name>
+      <docblock line="3">
+        <description>Category Model</description>
+        <long-description></long-description>
+        <tag line="3" name="property" description="" type="\Book" variable="$Book">
+          <type by_reference="false">\Book</type>
+        </tag>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$validate</name>
+        <default>array('name' =&gt; array('notempty' =&gt; array('rule' =&gt; array('notempty'))))</default>
+        <docblock line="10">
+          <description>Validation rules</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+        <name>$hasMany</name>
+        <default>array('Book' =&gt; array('className' =&gt; 'Book', 'foreignKey' =&gt; 'category_id', 'dependent' =&gt; false, 'conditions' =&gt; '', 'fields' =&gt; '', 'order' =&gt; '', 'limit' =&gt; '', 'offset' =&gt; '', 'exclusive' =&gt; '', 'finderQuery' =&gt; '', 'counterQuery' =&gt; ''))</default>
+        <docblock line="30">
+          <description>hasMany associations</description>
+          <long-description></long-description>
+          <tag line="30" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Model\Category.php</error>
+    </parse_markers>
+  </file>
+  <file path="Model\User.php" hash="6d44fff3c99b22a19d088927a089236b" package="Default">
+    <class final="false" abstract="false" namespace="global" line="7" package="Default">
+      <extends>\AppModel</extends>
+      <name>User</name>
+      <full_name>\User</full_name>
+      <docblock line="3">
+        <description>User Model</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$validate</name>
+        <default>array('name' =&gt; array('notempty' =&gt; array('rule' =&gt; array('notempty'))), 'email' =&gt; array('email' =&gt; array('rule' =&gt; array('email'))))</default>
+        <docblock line="9">
+          <description>Validation rules</description>
+          <long-description></long-description>
+          <tag line="9" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Model\User.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Controller\BooksControllerTest.php" hash="a0ad7ab5ffd6137a357c35b137d0e675" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\ControllerTestCase</extends>
+      <name>BooksControllerTest</name>
+      <full_name>\BooksControllerTest</full_name>
+      <docblock line="4">
+        <description>BooksController Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.book', 'app.category')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>testIndex</name>
+        <full_name>testIndex</full_name>
+        <docblock line="20">
+          <description>testIndex method</description>
+          <long-description></long-description>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="33" package="Default">
+        <name>testView</name>
+        <full_name>testView</full_name>
+        <docblock line="28">
+          <description>testView method</description>
+          <long-description></long-description>
+          <tag line="28" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="41" package="Default">
+        <name>testAdd</name>
+        <full_name>testAdd</full_name>
+        <docblock line="36">
+          <description>testAdd method</description>
+          <long-description></long-description>
+          <tag line="36" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="49" package="Default">
+        <name>testEdit</name>
+        <full_name>testEdit</full_name>
+        <docblock line="44">
+          <description>testEdit method</description>
+          <long-description></long-description>
+          <tag line="44" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="57" package="Default">
+        <name>testDelete</name>
+        <full_name>testDelete</full_name>
+        <docblock line="52">
+          <description>testDelete method</description>
+          <long-description></long-description>
+          <tag line="52" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Controller\BooksControllerTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Controller\CategoriesControllerTest.php" hash="77d4b22d587eaeb93ff6fa07b8d4a234" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\ControllerTestCase</extends>
+      <name>CategoriesControllerTest</name>
+      <full_name>\CategoriesControllerTest</full_name>
+      <docblock line="4">
+        <description>CategoriesController Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.category', 'app.book')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>testIndex</name>
+        <full_name>testIndex</full_name>
+        <docblock line="20">
+          <description>testIndex method</description>
+          <long-description></long-description>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="33" package="Default">
+        <name>testView</name>
+        <full_name>testView</full_name>
+        <docblock line="28">
+          <description>testView method</description>
+          <long-description></long-description>
+          <tag line="28" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="41" package="Default">
+        <name>testAdd</name>
+        <full_name>testAdd</full_name>
+        <docblock line="36">
+          <description>testAdd method</description>
+          <long-description></long-description>
+          <tag line="36" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="49" package="Default">
+        <name>testEdit</name>
+        <full_name>testEdit</full_name>
+        <docblock line="44">
+          <description>testEdit method</description>
+          <long-description></long-description>
+          <tag line="44" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="57" package="Default">
+        <name>testDelete</name>
+        <full_name>testDelete</full_name>
+        <docblock line="52">
+          <description>testDelete method</description>
+          <long-description></long-description>
+          <tag line="52" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Controller\CategoriesControllerTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Controller\UsersControllerTest.php" hash="b89f4f8a1e3c9faa9c1cc6144c3636b2" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\ControllerTestCase</extends>
+      <name>UsersControllerTest</name>
+      <full_name>\UsersControllerTest</full_name>
+      <docblock line="4">
+        <description>UsersController Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.user')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>testIndex</name>
+        <full_name>testIndex</full_name>
+        <docblock line="19">
+          <description>testIndex method</description>
+          <long-description></long-description>
+          <tag line="19" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="32" package="Default">
+        <name>testView</name>
+        <full_name>testView</full_name>
+        <docblock line="27">
+          <description>testView method</description>
+          <long-description></long-description>
+          <tag line="27" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="40" package="Default">
+        <name>testAdd</name>
+        <full_name>testAdd</full_name>
+        <docblock line="35">
+          <description>testAdd method</description>
+          <long-description></long-description>
+          <tag line="35" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="48" package="Default">
+        <name>testEdit</name>
+        <full_name>testEdit</full_name>
+        <docblock line="43">
+          <description>testEdit method</description>
+          <long-description></long-description>
+          <tag line="43" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="56" package="Default">
+        <name>testDelete</name>
+        <full_name>testDelete</full_name>
+        <docblock line="51">
+          <description>testDelete method</description>
+          <long-description></long-description>
+          <tag line="51" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Controller\UsersControllerTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Model\BookTest.php" hash="53839d34490c70862d0c7d32e3baac3a" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\CakeTestCase</extends>
+      <name>BookTest</name>
+      <full_name>\BookTest</full_name>
+      <docblock line="4">
+        <description>Book Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.book', 'app.category')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>setUp</name>
+        <full_name>setUp</full_name>
+        <docblock line="20">
+          <description>setUp method</description>
+          <long-description></long-description>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>tearDown</name>
+        <full_name>tearDown</full_name>
+        <docblock line="30">
+          <description>tearDown method</description>
+          <long-description></long-description>
+          <tag line="30" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Model\BookTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Model\CategoryTest.php" hash="a53a7250f5aa9e094f740ab60119fe07" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\CakeTestCase</extends>
+      <name>CategoryTest</name>
+      <full_name>\CategoryTest</full_name>
+      <docblock line="4">
+        <description>Category Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.category', 'app.book')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="25" package="Default">
+        <name>setUp</name>
+        <full_name>setUp</full_name>
+        <docblock line="20">
+          <description>setUp method</description>
+          <long-description></long-description>
+          <tag line="20" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="35" package="Default">
+        <name>tearDown</name>
+        <full_name>tearDown</full_name>
+        <docblock line="30">
+          <description>tearDown method</description>
+          <long-description></long-description>
+          <tag line="30" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Model\CategoryTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Case\Model\UserTest.php" hash="250b0befbf733619099dec06f0f2d5b8" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends>\CakeTestCase</extends>
+      <name>UserTest</name>
+      <full_name>\UserTest</full_name>
+      <docblock line="4">
+        <description>User Test Case</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="15" namespace="global" package="Default">
+        <name>$fixtures</name>
+        <default>array('app.user')</default>
+        <docblock line="10">
+          <description>Fixtures</description>
+          <long-description></long-description>
+          <tag line="10" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="24" package="Default">
+        <name>setUp</name>
+        <full_name>setUp</full_name>
+        <docblock line="19">
+          <description>setUp method</description>
+          <long-description></long-description>
+          <tag line="19" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="34" package="Default">
+        <name>tearDown</name>
+        <full_name>tearDown</full_name>
+        <docblock line="29">
+          <description>tearDown method</description>
+          <long-description></long-description>
+          <tag line="29" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Case\Model\UserTest.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Fixture\BookFixture.php" hash="e5fef29b30191dde189dda164195f1c3" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\CakeTestFixture</extends>
+      <name>BookFixture</name>
+      <full_name>\BookFixture</full_name>
+      <docblock line="2">
+        <description>BookFixture</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$fields</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'isbn' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'description' =&gt; array('type' =&gt; 'text', 'null' =&gt; true, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'category_id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null), 'author' =&gt; array('type' =&gt; 'string', 'null' =&gt; true, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+        <docblock line="8">
+          <description>Fields</description>
+          <long-description></long-description>
+          <tag line="8" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="32" namespace="global" package="Default">
+        <name>$records</name>
+        <default>array(array('id' =&gt; 1, 'name' =&gt; 'Lorem ipsum dolor sit amet', 'isbn' =&gt; 'Lorem ipsum dolor sit amet', 'description' =&gt; 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.', 'category_id' =&gt; 1, 'author' =&gt; 'Lorem ipsum dolor sit amet', 'created' =&gt; '2013-02-02 15:00:03'))</default>
+        <docblock line="27">
+          <description>Records</description>
+          <long-description></long-description>
+          <tag line="27" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Fixture\BookFixture.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Fixture\CategoryFixture.php" hash="0482d09e26b12171048850ec1e242cb2" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\CakeTestFixture</extends>
+      <name>CategoryFixture</name>
+      <full_name>\CategoryFixture</full_name>
+      <docblock line="2">
+        <description>CategoryFixture</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$fields</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'modified' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+        <docblock line="8">
+          <description>Fields</description>
+          <long-description></long-description>
+          <tag line="8" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="29" namespace="global" package="Default">
+        <name>$records</name>
+        <default>array(array('id' =&gt; 1, 'name' =&gt; 'Lorem ipsum dolor sit amet', 'created' =&gt; '2013-02-02 15:00:04', 'modified' =&gt; '2013-02-02 15:00:04'))</default>
+        <docblock line="24">
+          <description>Records</description>
+          <long-description></long-description>
+          <tag line="24" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Fixture\CategoryFixture.php</error>
+    </parse_markers>
+  </file>
+  <file path="Test\Fixture\UserFixture.php" hash="978754addb9fc80cca452b06cf5e9f81" package="Default">
+    <class final="false" abstract="false" namespace="global" line="6" package="Default">
+      <extends>\CakeTestFixture</extends>
+      <name>UserFixture</name>
+      <full_name>\UserFixture</full_name>
+      <docblock line="2">
+        <description>UserFixture</description>
+        <long-description></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="13" namespace="global" package="Default">
+        <name>$fields</name>
+        <default>array('id' =&gt; array('type' =&gt; 'integer', 'null' =&gt; false, 'default' =&gt; null, 'key' =&gt; 'primary'), 'name' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'email' =&gt; array('type' =&gt; 'string', 'null' =&gt; false, 'default' =&gt; null, 'collate' =&gt; 'latin1_swedish_ci', 'charset' =&gt; 'latin1'), 'created' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; false, 'default' =&gt; null), 'modified' =&gt; array('type' =&gt; 'datetime', 'null' =&gt; true, 'default' =&gt; null), 'indexes' =&gt; array('PRIMARY' =&gt; array('column' =&gt; 'id', 'unique' =&gt; 1)), 'tableParameters' =&gt; array('charset' =&gt; 'latin1', 'collate' =&gt; 'latin1_swedish_ci', 'engine' =&gt; 'InnoDB'))</default>
+        <docblock line="8">
+          <description>Fields</description>
+          <long-description></long-description>
+          <tag line="8" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="30" namespace="global" package="Default">
+        <name>$records</name>
+        <default>array(array('id' =&gt; 1, 'name' =&gt; 'Lorem ipsum dolor sit amet', 'email' =&gt; 'Lorem ipsum dolor sit amet', 'created' =&gt; '2013-02-02 15:00:04', 'modified' =&gt; '2013-02-02 15:00:04'))</default>
+        <docblock line="25">
+          <description>Records</description>
+          <long-description></long-description>
+          <tag line="25" name="var" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </property>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file Test\Fixture\UserFixture.php</error>
+    </parse_markers>
+  </file>
+  <file path="View\Helper\AppHelper.php" hash="3a35bb4fa8a8712c25dbcfca62e771d3" package="app\View\Helper">
+    <docblock line="2">
+      <description>Application level View Helper</description>
+      <long-description>&lt;p&gt;This file is application-wide helper file. You can put all
+application-wide helper-related methods here.&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.View.Helper"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="global" line="32" package="app\View\Helper">
+      <extends>\Helper</extends>
+      <name>AppHelper</name>
+      <full_name>\AppHelper</full_name>
+      <docblock line="24">
+        <description>Application helper</description>
+        <long-description>&lt;p&gt;Add your application-wide methods in the class below, your helpers
+will inherit them.&lt;/p&gt;</long-description>
+        <tag line="24" name="package" description="app.View.Helper"/>
+      </docblock>
+    </class>
+  </file>
+  <file path="webroot\index.php" hash="6ddd5dcee299e46022d46c866c5250b1" package="app\webroot">
+    <docblock line="2">
+      <description>Index</description>
+      <long-description>&lt;p&gt;The Front Controller for handling every request&lt;/p&gt;
+
+&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice.&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="CakePHP(tm) Project" link="http://cakephp.org"/>
+      <tag line="2" name="package" description="app.webroot"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 0.2.9"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="84" type="Include" package="Default">
+      <name/>
+    </include>
+    <include line="88" type="Include" package="Default">
+      <name/>
+    </include>
+    <constant namespace="global" line="25" package="app\webroot">
+      <name>DS</name>
+      <full_name>\DS</full_name>
+      <value>DIRECTORY_SEPARATOR</value>
+    </constant>
+    <constant namespace="global" line="39" package="app\webroot">
+      <name>ROOT</name>
+      <full_name>\ROOT</full_name>
+      <value>dirname(dirname(dirname(__FILE__)))</value>
+    </constant>
+    <constant namespace="global" line="47" package="app\webroot">
+      <name>APP_DIR</name>
+      <full_name>\APP_DIR</full_name>
+      <value>basename(dirname(dirname(__FILE__)))</value>
+    </constant>
+    <constant namespace="global" line="61" package="app\webroot">
+      <name>CAKE_CORE_INCLUDE_PATH</name>
+      <full_name>\CAKE_CORE_INCLUDE_PATH</full_name>
+      <value>'C:' . DS . 'wamp' . DS . 'www' . DS . 'cakephp-2.3.0' . DS . 'lib'</value>
+    </constant>
+    <constant namespace="global" line="69" package="app\webroot">
+      <name>WEBROOT_DIR</name>
+      <full_name>\WEBROOT_DIR</full_name>
+      <value>basename(dirname(__FILE__))</value>
+    </constant>
+    <constant namespace="global" line="72" package="app\webroot">
+      <name>WWW_ROOT</name>
+      <full_name>\WWW_ROOT</full_name>
+      <value>dirname(__FILE__) . DS</value>
+    </constant>
+  </file>
+  <file path="webroot\test.php" hash="7d1daf13982905c2c76f5f8064a384d7" package="app\webroot">
+    <docblock line="2">
+      <description>Web Access Frontend for TestSuite</description>
+      <long-description>&lt;p&gt;PHP 5&lt;/p&gt;
+
+&lt;p&gt;CakePHP(tm) Tests &lt;a href="http://book.cakephp.org/2.0/en/development/testing.html"&gt;http://book.cakephp.org/2.0/en/development/testing.html&lt;/a&gt;
+Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)&lt;/p&gt;
+
+&lt;p&gt;Licensed under The MIT License
+Redistributions of files must retain the above copyright notice&lt;/p&gt;</long-description>
+      <tag line="2" name="copyright" description="Copyright 2005-2012, Cake Software Foundation, Inc. (http://cakefoundation.org)"/>
+      <tag line="2" name="link" description="http://book.cakephp.org/2.0/en/development/testing.html" link="http://book.cakephp.org/2.0/en/development/testing.html"/>
+      <tag line="2" name="package" description="app.webroot"/>
+      <tag line="2" name="since" description="CakePHP(tm) v 1.2.0.4433"/>
+      <tag line="2" name="license" description="MIT License (http://www.opensource.org/licenses/mit-license.php)"/>
+    </docblock>
+    <include line="76" type="Include" package="Default">
+      <name/>
+    </include>
+    <include line="80" type="Include" package="Default">
+      <name/>
+    </include>
+    <include line="92" type="Require Once" package="Default">
+      <name/>
+    </include>
+    <constant namespace="global" line="25" package="app\webroot">
+      <name>DS</name>
+      <full_name>\DS</full_name>
+      <value>DIRECTORY_SEPARATOR</value>
+    </constant>
+    <constant namespace="global" line="39" package="app\webroot">
+      <name>ROOT</name>
+      <full_name>\ROOT</full_name>
+      <value>dirname(dirname(dirname(__FILE__)))</value>
+    </constant>
+    <constant namespace="global" line="47" package="app\webroot">
+      <name>APP_DIR</name>
+      <full_name>\APP_DIR</full_name>
+      <value>basename(dirname(dirname(__FILE__)))</value>
+    </constant>
+    <constant namespace="global" line="58" package="app\webroot">
+      <name>CAKE_CORE_INCLUDE_PATH</name>
+      <full_name>\CAKE_CORE_INCLUDE_PATH</full_name>
+      <value>'C:' . DS . 'wamp' . DS . 'www' . DS . 'cakephp-2.3.0' . DS . 'lib'</value>
+    </constant>
+    <constant namespace="global" line="66" package="app\webroot">
+      <name>WEBROOT_DIR</name>
+      <full_name>\WEBROOT_DIR</full_name>
+      <value>basename(dirname(__FILE__))</value>
+    </constant>
+    <constant namespace="global" line="69" package="app\webroot">
+      <name>WWW_ROOT</name>
+      <full_name>\WWW_ROOT</full_name>
+      <value>dirname(__FILE__) . DS</value>
+    </constant>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="app" full_name="app">
+    <package name="Config" full_name="app\Config">
+      <package name="Schema" full_name="app\Config\Schema"/>
+    </package>
+    <package name="Console" full_name="app\Console">
+      <package name="Command" full_name="app\Console\Command"/>
+    </package>
+    <package name="Controller" full_name="app\Controller"/>
+    <package name="Model" full_name="app\Model"/>
+    <package name="View" full_name="app\View">
+      <package name="Helper" full_name="app\View\Helper"/>
+    </package>
+    <package name="webroot" full_name="app\webroot"/>
+  </package>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
